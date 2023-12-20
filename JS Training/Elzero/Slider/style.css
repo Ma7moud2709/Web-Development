@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.slider-img {
+    margin: 10px auto;
+    width: 800px;
+    height: 300px;
+    position: relative;
+}
+
+.slider-img img {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 300px;
+    transition: opacity 1s;
+    z-index: 0;
+}
+
+.slider-img img.active {
+    opacity: 1;
+}
+
+.slider-img .number {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    z-index: 1;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.slider-controls {
+    width: 550px;
+    margin: auto;
+}
+
+.slider-controls .prev,
+.slider-controls .next {
+    background-color: #009688;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    user-select: none;
+    width: 20%;
+}
+
+.slider-controls .prev {
+    float: left;
+}
+
+.slider-controls .next {
+    float: right;
+}
+
+.slider-controls .next.disabled,
+.slider-controls .prev.disabled {
+    background-color: rgba(0, 150, 136, 0.5);
+    cursor: no-drop;
+}
+
+.slider-controls .indicator{
+    width: 60%;
+    float: left;
+}
+
+.slider-controls .indicator ul{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+
+.slider-controls .indicator ul li{
+    display: inline-block;
+    background-color: grey;
+    color: #333;
+    font-weight: bold;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.slider-controls .indicator ul li.active{
+    background-color: #009688;
+    color: white;
+}

@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #eee;
+}
+/* Any Button Props */
+.button, .contact form input[type="submit"], button{
+    display: inline-block;
+    background-color: #2c7873;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 15px;
+}
+/* Start Top Section  */
+.top{
+    position: relative;
+    background-image: url(images/hero-bg.jpg);
+    background-size: cover;
+    height: 350px ;
+    display: flex;
+    flex-direction: column;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 ,0.4);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.header-left{
+    margin-left: 20px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-right: 30px;
+}
+main{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 35px;
+    z-index: 0;
+}
+/* End Top Section  */
+
+/* Start Services Section  */
+section{
+    text-align: center;
+    margin-top: 35px;
+}
+/* Start Services Boxs Section  */
+section .services-boxs {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+section .services-boxs div img{
+    width: 50px;
+}
+
+section .services-boxs div h5{
+    font-size: 25px;
+}
+
+section .services-boxs div{
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.15);
+    width: 300px;
+    padding: 25px;
+    margin-left: 25px;
+    font-size: 20px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+/* End Services Section  */
+
+/* Start About Section  */
+.about{
+    display: flex;
+    font-size: 20px;
+    margin-left: 39px;    
+}
+
+.about img{
+    height: 100%;
+    width: 50%;
+}
+
+.about .text{
+    width: 50%;
+}
+/* End About Section  */
+
+/* Start Team Section  */
+.team-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.team-sec .text h1{
+    font-size: 35px;
+}
+
+.team-sec .text p{
+    font-size: 25px;
+}
+
+.team-sec .team{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 25px;
+}
+
+.team-sec .team div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+.team-sec .team div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team-sec .team div .details{
+    background-color: #2c7873;
+    width: 92.2%;
+    color: #fff;
+    margin-top: -10px;
+    padding: 25px 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    border-radius: 0 0 10px 10px;
+}
+/* End Team Section  */
+
+/* Start Contact Section  */
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact img{
+    width: 50%;
+    height: 550px;
+}
+
+.contact h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.contact .container{
+    margin-top: 50px;
+    padding: 45px;
+}
+.contact  {
+    background-color: #ddd ;
+}
+input, select{
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    color: #101010;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.05);
+}
+.contact .tel-ser input,.contact .tel-ser select {
+    width: 49%;
+}
+.contact form .tel-ser{
+    display: flex;
+    justify-content: space-between;
+}
+select{
+    margin-right: -14px;
+}
+.contact form input[type="submit"]{
+    width: 103%;
+}
+/* End Team Section  */
+
+/* Start Testiomonials Section  */
+
+.Testimonial{
+    display: flex;
+    flex-direction: column;
+}
+.Testimonial h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.Testimonial img{
+    margin-top: 30px;
+    width: 150px;
+    border-radius: 25px;
+}
+.Testimonial .clients{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Testimonial .clients div{
+    width: 30%;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.15);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+/* End Testiomonials Section  */
+
+/* Start Footer Section  */
+footer{
+    background-color: #004445;
+    color: white;
+    height: 300px;
+    margin-bottom: 20px;
+    font-size: inherit;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+footer .container div{
+    width: 20%;
+}
+footer .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer form :inhea
+footer a{
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+/* End Footer Section  */
